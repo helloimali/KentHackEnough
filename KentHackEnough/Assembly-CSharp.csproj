@@ -1,0 +1,608 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{8938846F-5E81-7560-4AA4-3C1BA0587FF8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_1_1;UNITY_2017_1;UNITY_2017;PLATFORM_ARCH_64;UNITY_64;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;__MICROSPLAT__</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Algorithms\SlidingMax.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Algorithms\SmoothedFloat.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Algorithms\SmoothedQuaternion.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Algorithms\SmoothedVector3.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Animation\Ease.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Animation\IValueProxy.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Animation\TransformTweenBehaviour.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Animation\Tween\Enums.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Animation\Tween\IInterpolator.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Animation\Tween\Internal\Interpolators\InterpolatorBases.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Animation\Tween\Internal\Interpolators\MaterialInterpolators.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Animation\Tween\Internal\Interpolators\TransformInterpolators.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Animation\Tween\Internal\Interpolators\ValueInterpolators.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Animation\Tween\Internal\TweenInstance.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Animation\Tween\Internal\TweenRunner.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Animation\Tween\Tween.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Attachments\AttachmentHand.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Attachments\AttachmentHandEnableDisable.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Attachments\AttachmentHands.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Attachments\AttachmentPointBehaviour.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Attachments\AttachmentPointFlags.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Attributes\AutoFindAttribute.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Attributes\CombinablePropertyAttribute.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Attributes\Disable.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Attributes\DisableIf.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Attributes\EditTimeOnly.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Attributes\EnumFlags.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Attributes\ImplementsInterface.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Attributes\ImplementsTypeNameDropdownAttribute.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Attributes\Incrementable.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Attributes\MaxValue.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Attributes\MinMax.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Attributes\MinValue.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Attributes\OnEditorChange.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Attributes\UnitsAttribute.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\AssetFolder.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\DelayBuffer.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\DeltaBuffer.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\Deque.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\Either.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\Hash.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\Maybe.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\MinHeap.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\MultiTypedList.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\MultiTypedReference.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\Pool.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\ProduceConsumeBuffer.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\ReadonlyHashSet.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\ReadonlyList.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\RingBuffer.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\SerializableDictionary.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\SerializableHashSet.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\SerializableType.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\StreamingAsset.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\DataStructures\StreamingFolder.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\DetectionUtilities\AbstractHoldDetector.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\DetectionUtilities\Detector.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\DetectionUtilities\DetectorLogicGate.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\DetectionUtilities\ExtendedFingerDetector.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\DetectionUtilities\FingerDirectionDetector.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\DetectionUtilities\PalmDirectionDetector.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\DetectionUtilities\PinchDetector.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\DetectionUtilities\ProximityDetector.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\HandPool.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\HandRepresentation.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Hands\CapsuleHand.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Hands\DebugHand.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Hands\FingerModel.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Hands\HandDrop.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Hands\HandEnableDisable.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Hands\HandModel.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Hands\HandTransitionBehavior.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Hands\IHandModel.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Hands\RigidFinger.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Hands\RigidHand.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Hands\SkeletalFinger.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Hands\SkeletalHand.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Hands\TestHandFactory.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\LeapDeviceInfo.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\LeapHandController.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\LeapImageRetriever.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\LeapPreferences.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\LeapProvider.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\LeapServiceProvider.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Query\Concat.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Query\DirectQueryExtensions.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Query\DirectQueryOps.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Query\ListAndArrayExtensions.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Query\OfType.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Query\QueryWrapper.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Query\Select.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Query\SelectMany.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Query\SkipCount.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Query\SkipWhile.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Query\TakeCount.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Query\TakeWhile.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Query\Where.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Query\WithPrevious.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Query\Zip.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\RiggedFinger.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\RiggedHand.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Space\Definitions\LeapCylindricalSpace.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Space\Definitions\LeapRadialSpace.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Space\Definitions\LeapSphericalSpace.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Space\ISpaceComponent.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Space\ITransformer.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Space\LeapSpace.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Space\LeapSpaceAnchor.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Testing\LeapTestBase.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Testing\StationaryTestLeapProvider.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\AssertHelper.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\BitConverterNonAlloc.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\Comment.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\ConnectionMonitor.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\DisconnectionNotice.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\EditorResources.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\EnableDepthBuffer.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\EnumEventTable.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\ExecutionOrder.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\FitHeightToScreen.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\FpsLabel.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\FrameRateControls.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\GuiRectUtil.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\HandUtils.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\InternalUtility.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\KeyEnableBehaviors.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\KeyEnableGameObjects.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\LeapUnityExtensions.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\ProfilerSample.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\ProgressBar.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\RuntimeColliderGizmos.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\RuntimeGizmoManager.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\RuntimeGizmoToggle.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\SingleLayer.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\StretchToScreen.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\TransformUtil.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\Utils\Utils.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\VR\EyeType.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\VR\LeapVRCameraControl.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\VR\LeapVRTemporalWarping.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\VR\TemporalWarpingStatus.cs" />
+     <Compile Include="Assets\LeapMotion\Core\Scripts\VR\VRHeightOffset.cs" />
+     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Antialiasing.cs" />
+     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Bloom.cs" />
+     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\BloomAndFlares.cs" />
+     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\BloomOptimized.cs" />
+     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Blur.cs" />
+     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\BlurOptimized.cs" />
+     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\CameraMotionBlur.cs" />
+     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ColorCorrectionCurves.cs" />
+     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ColorCorrectionLookup.cs" />
+     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ColorCorrectionRamp.cs" />
+     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ContrastEnhance.cs" />
+     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ContrastStretch.cs" />
+     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\CreaseShading.cs" />
+     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\DepthOfField.cs" />
+     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\DepthOfFieldDeprecated.cs" />
+     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\EdgeDetection.cs" />
+     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Fisheye.cs" />
+     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\GlobalFog.cs" />
+     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Grayscale.cs" />
+     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ImageEffectBase.cs" />
+     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ImageEffects.cs" />
+     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\MotionBlur.cs" />
+     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\NoiseAndGrain.cs" />
+     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\NoiseAndScratches.cs" />
+     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsBase.cs" />
+     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsHelper.cs" />
+     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Quads.cs" />
+     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ScreenOverlay.cs" />
+     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ScreenSpaceAmbientObscurance.cs" />
+     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ScreenSpaceAmbientOcclusion.cs" />
+     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\SepiaTone.cs" />
+     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\SunShafts.cs" />
+     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\TiltShift.cs" />
+     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Tonemapping.cs" />
+     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Triangles.cs" />
+     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Twirl.cs" />
+     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\VignetteAndChromaticAberration.cs" />
+     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\AchievementType.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\AndroidPlatform.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\BufferedAudioStream.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Callback.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\CallbackRunner.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\CAPI.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\CloudStorageDataStatus.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\CloudStorageUpdateStatus.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Decoder.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Encoder.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\IMicrophone.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\IVoipPCMSource.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\KeyValuePairType.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\LaunchType.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\LeaderboardFilterType.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\LeaderboardStartAt.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\LivestreamingAudience.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\LivestreamingMicrophoneStatus.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\LivestreamingStartStatus.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\MatchmakingCriterionImportance.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\MatchmakingOptions.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\MatchmakingStatApproach.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Message.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\MicrophoneInput.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\MicrophoneInputNative.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\AchievementDefinition.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\AchievementProgress.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\AchievementUpdate.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\ApplicationVersion.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\CloudStorageConflictMetadata.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\CloudStorageData.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\CloudStorageMetadata.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\CloudStorageUpdateResponse.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\DeserializeableList.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\Error.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\HttpTransferUpdate.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\InstalledApplication.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\LaunchDetails.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\LeaderboardEntry.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\LivestreamingApplicationStatus.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\LivestreamingStartResult.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\LivestreamingStatus.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\LivestreamingVideoStats.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\MatchmakingAdminSnapshot.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\MatchmakingAdminSnapshotCandidate.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\MatchmakingBrowseResult.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\MatchmakingEnqueuedUser.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\MatchmakingEnqueueResult.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\MatchmakingEnqueueResultAndRoom.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\MatchmakingStats.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\NetworkingPeer.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\OrgScopedID.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\Party.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\PartyID.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\Pid.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\PingResult.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\PlatformInitialize.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\Product.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\Purchase.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\Room.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\RoomInviteNotification.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\SdkAccount.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\SystemPermission.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\SystemVoipState.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\User.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\UserAndRoom.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Models\UserProof.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Packet.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\PeerConnectionState.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\PermissionGrantStatus.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\PermissionType.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Platform.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\PlatformInitializeResult.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\PlatformInternal.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\PlatformSettings.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\Request.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\RoomJoinability.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\RoomJoinPolicy.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\RoomMembershipLockStatus.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\RoomOptions.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\RoomType.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\SdkAccountType.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\SendPolicy.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\StandalonePlatform.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\StandalonePlatformSettings.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\SystemVoipStatus.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\TimeWindow.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\UserOptions.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\UserOrdering.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\UserPresenceStatus.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\VoipAudioSource.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\VoipAudioSourceHiLevel.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\VoipInput.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\VoipMuteState.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\VoipPCMSourceNative.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\VoipSampleRate.cs" />
+     <Compile Include="Assets\OculusPlatform\Scripts\WindowsPlatform.cs" />
+     <Compile Include="Assets\OSPNative\scenes\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
+     <Compile Include="Assets\OSPNative\scripts\helpers\ONSPReflectionZone.cs" />
+     <Compile Include="Assets\OSPNative\scripts\ONSPAmbisonicsNative.cs" />
+     <Compile Include="Assets\OSPNative\scripts\ONSPAudioSource.cs" />
+     <Compile Include="Assets\OSPNative\scripts\ONSPProfiler.cs" />
+     <Compile Include="Assets\OSPNative\scripts\ONSPVersion.cs" />
+     <Compile Include="Assets\OVR\Scripts\Composition\OVRCameraComposition.cs" />
+     <Compile Include="Assets\OVR\Scripts\Composition\OVRComposition.cs" />
+     <Compile Include="Assets\OVR\Scripts\Composition\OVRCompositionUtil.cs" />
+     <Compile Include="Assets\OVR\Scripts\Composition\OVRDirectComposition.cs" />
+     <Compile Include="Assets\OVR\Scripts\Composition\OVRExternalComposition.cs" />
+     <Compile Include="Assets\OVR\Scripts\Composition\OVRSandwichComposition.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRBoundary.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRCameraRig.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRCommon.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRDebugHeadController.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRDisplay.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRHaptics.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRHapticsClip.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRInput.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRLayerAttribute.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRLint.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRManager.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRMixedReality.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVROnCompleteListener.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVROverlay.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRPlatformMenu.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRPlugin.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRProfile.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRTouchpad.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRTracker.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRChromaticAberration.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRCubemapCapture.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRDebugInfo.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRGearVrController.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRGearVrControllerTest.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRGrabbable.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRGrabber.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRGridCube.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRMixedRealityCaptureSettings.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRModeParms.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRMonoscopic.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRPlayerController.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRResetOrientation.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRRTOverlayConnector.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRSceneSampleController.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRScreenFade.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRWaitCursor.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballGroupAttribute.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\AmbientOcclusionComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\BloomComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\BuiltinDebugViewsComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\ChromaticAberrationComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\ColorGradingComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\DepthOfFieldComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\DitheringComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\EyeAdaptationComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\FogComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\FxaaComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\GrainComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\MotionBlurComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\ScreenSpaceReflectionComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\TaaComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\UserLutComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\VignetteComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\AmbientOcclusionModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\BloomModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\BuiltinDebugViewsModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\ChromaticAberrationModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\ColorGradingModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\DepthOfFieldModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\DitheringModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\EyeAdaptationModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\FogModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\GrainModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\ScreenSpaceReflectionModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\UserLutModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\VignetteModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\PostProcessingBehaviour.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\PostProcessingComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\PostProcessingContext.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\PostProcessingModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\PostProcessingProfile.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Utils\ColorGradingCurve.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Utils\GraphicsUtils.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
+     <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
+     <Compile Include="Assets\TornadoBanditsStudio\Low Poly Free Pack\Scripts\TBS_CameraMovement.cs" />
+     <Compile Include="Assets\TornadoBanditsStudio\Low Poly Free Pack\Water\TBS_Water.cs" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
+     <None Include="Assets\OSPNative\THIRD_PARTY_NOTICES.txt" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ShowAlphaChannel.shader" />
+     <None Include="Assets\LeapMotion\Core\Resources\LeapCG.cginc" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Fog.shader" />
+     <None Include="Assets\OVR\Resources\OVRMRUnlitTransparent.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\SunShaftsComposite.shader" />
+     <None Include="Assets\LeapMotion\Core\README_BEFORE_UPDATING.txt" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\LutGen.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurves.shader" />
+     <None Include="Assets\OVR\Resources\OVRMRChromaKey.cginc" />
+     <None Include="Assets\OculusPlatform\THIRD_PARTY_NOTICES.txt" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ScreenSpaceAmbientObscurance.shader" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\NFAA.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
+     <None Include="Assets\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\VignetteShader.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
+     <None Include="Assets\NatureStarterKit2\info.txt" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularSmooth.shader" />
+     <None Include="Assets\OVR\Editor\AndroidManifest.OVRSubmission.xml" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\Projectors\Guidelines.txt" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
+     <None Include="Assets\LICENSE.txt" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\MotionBlur.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBloom.shader" />
+     <None Include="Assets\PostProcessing\Utilities\CustomMotionTexture\Shaders\CustomMotionVectorTexture.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\ACES.cginc" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\UberSecondPass.cginc" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\MinMaxReduction.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\SSAA.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\RadialBlur.shader" />
+     <None Include="Assets\LeapMotion\Core\readme.txt" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Tonemapping.cginc" />
+     <None Include="Assets\OVR\Shaders\OVRColorRampAlpha.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ContrastComposite.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset3.shader" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\FisheyeShader.shader" />
+     <None Include="Assets\LeapMotion\Core\Resources\RuntimeGizmos.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Uber.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Apply.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Blit.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\frag_ao.cginc" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\FXAA3.cginc" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\AmbientOcclusion.shader" />
+     <None Include="Assets\OVR\Resources\OVRMRUnlit.shader" />
+     <None Include="Assets\LeapMotion\Core\Dependencies.txt" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ToonShading\Shaders\ToonBasicOutline.shader" />
+     <None Include="Assets\OVR\Shaders\Unlit Crosshair.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfField34.shader" />
+     <None Include="Assets\PostProcessing\Resources\Bluenoise64\LICENSE.txt" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\BuiltinDebugViews.shader" />
+     <None Include="Assets\LeapMotion\Core\Resources\ThresholdOverlay.shader" />
+     <None Include="Assets\OVR\Resources\Unlit Transparent Color.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBlur.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\SSAOShader.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ConvertDepth.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurvesSimple.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderYUV.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Common.cginc" />
+     <None Include="Assets\OVR\Resources\OVRMRCameraFrameLit.shader" />
+     <None Include="Assets\PostProcessing\Resources\Bluenoise64\COPYING.txt" />
+     <None Include="Assets\LeapMotion\Core\Resources\PassthroughForeground.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\CreaseApply.shader" />
+     <None Include="Assets\PostProcessing\Editor Resources\UI\Trackball.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ChromaticAberrationShader.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\GlobalFog.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Luminance.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ToonShading\Shaders\ToonLit.shader" />
+     <None Include="Assets\LeapMotion\Core\Resources\PassthroughBackground.shader" />
+     <None Include="Assets\OVR\Resources\Underlay Transparent Occluder.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Bloom.cginc" />
+     <None Include="Assets\OVR\Resources\Alpha Premultiply.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionSelective.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\TAA.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\Bokeh34.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\EyeHistogram.compute" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\TAA.cginc" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlurDX11.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\EyeAdaptation.cginc" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\BlurEffectConeTaps.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlur.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\GrainGen.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\DLAA.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\FXAA.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrainDX11.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\DiskKernels.cginc" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.cginc" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
+     <None Include="Assets\OSPNative\LICENSE.txt" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableBlur.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\MotionBlurClear.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionEffect.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\GrayscaleEffect.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\SepiaToneEffect.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\TwirlEffect.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\VortexEffect.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Adaptation.shader" />
+     <None Include="Assets\OVR\Resources\OVRMRCameraFrame.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrain.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Bloom.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
+     <None Include="Assets\OVR\Resources\OVRMRClipPlane.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\VignettingShader.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\Tonemapper.shader" />
+     <None Include="Assets\LeapMotion\Core\Version.txt" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA2.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrection3DLut.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
+     <None Include="Assets\LeapMotion\Core\Resources\VertexOffsetShader.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\EdgeDetectNormals.shader" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\VectorscopeRender.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\EyeAdaptation.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\PrepareSunShaftsBlur.shader" />
+     <None Include="Assets\OculusPlatform\LICENSE.txt" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\Blend.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\SimpleClear.shader" />
+     <None Include="Assets\OVR\Resources\Underlay Impostor.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularDisplacement.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
+     <None Include="Assets\OVR\LICENSE.txt" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA3Console.shader" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
+     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
+     <None Include="Assets\OVR\Plugins\placeholder.txt" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Timeline">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="LeapCSharp.NET3.5">
+ <HintPath>C:/Users/Ali Malik/Documents/KentHackEnough/KHE-UNITY-CLOUD/KentHackEnough/Assets/LeapMotion/Core/Plugins/LeapCSharp.NET3.5.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
