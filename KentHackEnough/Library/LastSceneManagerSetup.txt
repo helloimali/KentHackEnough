@@ -1,4 +1,1 @@
-sceneSetups:
-- path: Assets/OVR/Scenes/Room.unity
-  isLoaded: 1
-  isActive: 1
+sceneSetups: []
